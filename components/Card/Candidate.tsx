@@ -21,7 +21,7 @@ const Candidate = ({ candidate, type = 'radio' }: ICandidate) => {
           />
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center space-y-3">
+      <div className="z-[20] flex flex-col items-center justify-center space-y-3">
         <h4 className="text-sm">{candidate.name}</h4>
         <h1 className="text-3xl font-bold text-primary">
           {candidate.nick_name}

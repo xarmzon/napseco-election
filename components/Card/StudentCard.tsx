@@ -13,9 +13,9 @@ const StudentCard = ({ student }: StudentCardProps) => {
       <h2 className="text-center text-xl font-bold text-primary">
         {student.name}
       </h2>
-      <div className="mt-5 flex items-center justify-between font-semibold opacity-75">
+      <div className="mt-5 flex items-center justify-center font-semibold opacity-75">
         <p>{student.matric}</p>
-        <p>{student.department}</p>
+        {/* <p>{student.department}</p> */}
       </div>
     </div>
   )

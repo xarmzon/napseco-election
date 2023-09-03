@@ -18,25 +18,25 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         const { matric, otp, surname } = req.body
 
         //console.log(matric, otp)
-        if (!validateMatric(matric)) {
+        if (!validateMatric(matric?.trim())) {
           return res
             .status(HTTP_REQUEST_CODES.BAD_REQUEST)
             .json({ msg: 'Invalid matric number supplied' })
         }
 
-        if (!validateOTP(otp)) {
+        if (!validateOTP(otp?.trim())) {
           return res
             .status(HTTP_REQUEST_CODES.BAD_REQUEST)
             .json({ msg: 'Invalid OTP supplied' })
         }
-        if (!validateSurname(surname)) {
+        if (!validateSurname(surname?.trim())) {
           res
             .status(HTTP_REQUEST_CODES.BAD_REQUEST)
             .json({ msg: 'Invalid surname supplied' })
         }
 
         const studentData = await Student.findOne({
-          matric: matric.toUpperCase(),
+          matric: matric?.trim()?.toUpperCase(),
         })
         if (!studentData)
           return res
@@ -51,7 +51,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
         console.log(s, s[0], matric)
 
-        if (studentSurname !== surname.toLowerCase()) {
+        if (studentSurname !== surname?.trim()?.toLowerCase()) {
           return res.status(HTTP_REQUEST_CODES.BAD_REQUEST).json({
             msg: `Invalid  Surname for Matriculation Number ${matric}`,
           })
