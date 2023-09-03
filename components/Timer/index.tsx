@@ -71,7 +71,7 @@ const Timer = () => {
   return (
     <>
       <div className="flex flex-col pt-8 text-center text-4xl font-black text-gray-600">
-        <h3 className="mb-3 text-xl font-light"> Time Left</h3>{' '}
+        {/* <h3 className="mb-3 text-xl font-light"> Time Left</h3>{' '} */}
         <div>
           {timerContext?.timeExpired ? (
             <VoteEnd />
@@ -93,13 +93,13 @@ export default Timer
 
 const TimerDisplay = ({ value, text }: { value: string; text: string }) => {
   return (
-    <div className=" relative flex min-w-[75px] flex-col items-center justify-center rounded-md bg-gradient-to-br from-green-300 via-[rgba(9,134,102,0.8)] to-green-400 p-2 text-center text-slate-100 shadow-md">
+    <div className=" relative flex min-w-[75px] flex-col items-center justify-center rounded-md bg-gradient-to-br from-primary via-[rgba(196,113,54,0.8)] to-secondary p-2 text-center text-slate-100 shadow-md">
       <span className="text-5xl">{value}</span>
       <span className="text-sm font-normal">
         {text}
         {Number(value) !== 1 ? 's' : ''}
       </span>
-      <div className="absolute -top-1 -right-1 h-4 w-4 animate-spin rounded-full bg-gradient-to-tr from-amber-200 to-amber-500 shadow-sm"></div>
+      <div className="absolute -top-1 -right-1 h-4 w-4 animate-spin rounded-full bg-gradient-to-tr from-secondary/20 to-secondary shadow-sm"></div>
     </div>
   )
 }
