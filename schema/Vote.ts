@@ -1,5 +1,5 @@
-import { IDataObject } from '../data/posts'
 import { Schema, model, models } from 'mongoose'
+import { IDataObject } from '../data/posts_2023'
 
 export interface IVoting extends IDataObject {
   count: number
