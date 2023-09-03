@@ -2,6 +2,7 @@ export interface IDataObject {
   name: string
   nick_name: string
   matric: string
+  department?: string
 }
 
 export const postsData: Record<string, IDataObject[]> = {

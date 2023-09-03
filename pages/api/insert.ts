@@ -24,6 +24,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
                     matric: data.matric.trim(),
                     name: data.name.trim(),
                     nick_name: data.nick_name.trim(),
+                    department: 'PHYSICS',
                     post: post
                       .replaceAll('__bo__', '(')
                       .replaceAll('__bc__', ')')
