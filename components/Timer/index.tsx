@@ -13,7 +13,7 @@ const renderer = ({
   if (completed) {
     // Render a completed state
     return (
-      <div className="text-center text-6xl font-bold text-red-600">
+      <div className="mt-32 text-center text-7xl font-bold text-red-600">
         Voting Closed
       </div>
     )

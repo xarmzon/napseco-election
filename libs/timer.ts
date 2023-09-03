@@ -2,7 +2,7 @@
 export const timeElapsed = () => {
   const now = new Date().getTime()
   // const endDate = new Date('Jan 26, 2023, 15:00:00')
-  const endDate = new Date('Sep 03, 2023, 18:15:00')
+  const endDate = new Date('Sep 03, 2023, 18:00:00')
   // console.log(endDate)
   const distance = endDate.getTime() - now
 

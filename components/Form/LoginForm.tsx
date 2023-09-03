@@ -102,7 +102,7 @@ const LoginForm = ({ setShow }: ILoginForm) => {
           <input
             value={userData.otp}
             onChange={(e) => handledChange(e.target.name, e.target.value)}
-            className="flex-1 flex-shrink-0 border-none bg-transparent outline-none focus:ring-0"
+            className="z-[10] flex-1 flex-shrink-0 border-none bg-transparent outline-none focus:ring-0"
             type="password"
             // inputMode="numeric"
             placeholder="Enter the OTP"
@@ -114,7 +114,7 @@ const LoginForm = ({ setShow }: ILoginForm) => {
         <div className="flex items-center justify-center">
           {timerContext?.timeExpired ? (
             <div className="p-5 text-center text-xl font-bold text-red-700">
-              <p className="">VOTING HAS ENDED</p>
+              <p className="">CLOSED</p>
             </div>
           ) : (
             <button
@@ -127,7 +127,7 @@ const LoginForm = ({ setShow }: ILoginForm) => {
             </button>
           )}
         </div>
-        {/* <div className="flex cursor-pointer items-center justify-center">
+        {/* <div className="flex items-center justify-center cursor-pointer">
           <span
             className="text-yellow-600"
             onClick={() => setShow((prev) => 'otp')}
@@ -135,9 +135,9 @@ const LoginForm = ({ setShow }: ILoginForm) => {
             Request OTP
           </span>
         </div> */}
-        <span className="absolute -top-12 -left-6  h-12 w-12 rounded-full bg-gradient-to-bl from-primary/20 to-yellow-600/10" />
-        {/* <span className="absolute -bottom-4 -right-4  h-12 w-12 rounded-full bg-gradient-to-bl from-primary/20 to-yellow-600/10" /> */}
-        <span className="absolute top-1/2 left-1/2 -z-0 h-48 w-48  rounded-full bg-gradient-to-bl from-primary/10 to-yellow-600/10" />
+        <span className="absolute -top-12 -left-6 h-12 w-12 rounded-full bg-gradient-to-bl from-primary/20 to-yellow-600/10" />
+        {/* <span className="absolute w-12 h-12 rounded-full -bottom-4 -right-4 bg-gradient-to-bl from-primary/20 to-yellow-600/10" /> */}
+        <span className="absolute top-1/2 left-1/2 -z-0 h-48 w-48 rounded-full bg-gradient-to-bl from-primary/10 to-yellow-600/10" />
       </form>
     </>
   )
