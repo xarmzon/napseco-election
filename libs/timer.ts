@@ -21,6 +21,6 @@ export const timeElapsed = () => {
     done = false
   }
 
-  // done = true
+  done = true
   return [hours, minutes, seconds, done, distance, days]
 }
