@@ -1,123 +1,103 @@
 export interface IDataObject {
   name: string
   nick_name: string
-  department: string
   matric: string
 }
 
 export const postsData: Record<string, IDataObject[]> = {
   PRESIDENT: [
     {
-      name: 'BAKARE AZEEZ OLAYINKA ',
-      nick_name: 'OPULENT',
-      department: 'MATHEMATICS',
-      matric: '19/56EB049',
+      name: 'MAKINDE EMMANUEL',
+      nick_name: 'EMMY',
+      matric: '19/56ED088',
+    },
+    {
+      name: 'ALLI JESUJUWONLO OLUWATOBI ',
+      nick_name: 'HONORABLE',
+      matric: '19/56ED040',
+    },
+  ],
+  VICE_PRESIDENT: [
+    {
+      name: 'SULAIMON ABIBAT YETUNDE',
+      nick_name: 'BEEBAH',
+      matric: '20/56ED096',
     },
   ],
   GENERAL_SECRETARY: [
     {
-      name: 'OLUOYE KAYODE JOSHUA',
-      nick_name: 'KAYSMART',
-      department: 'INDUSTRIAL CHEMISTRY',
-      matric: '19/56EF063',
+      name: 'YUSUF ABDULSALAM',
+      nick_name: 'YUSUF',
+      matric: '19/56ED133',
     },
   ],
   ASSISTANT_GENERAL_SECRETARY: [
     {
-      name: 'OBELAWO FATHIAT OLUWADAMILOLA',
-      nick_name: 'THIABABY',
-      department: 'CHEMISTRY',
-      matric: '20/56EE119',
+      name: 'OJO BENEDICT AYODELE',
+      nick_name: 'DELIJAHX',
+      matric: '19/56ED097',
     },
   ],
   FINANCIAL_SECRETARY: [
     {
-      name: 'OSHINBOLURO TEMITOPE JOSHUA',
-      nick_name: 'BIGGIEMATHS',
-      department: 'MATHEMATICS',
-      matric: '19/56EB106',
+      name: 'SALAKO IBRAHIM OLUWATOBILOBA',
+      nick_name: 'BARON',
+      matric: '19/56ED123',
+    },
+    {
+      name: 'ABDULSALAM ZAYNAB TEMITOPE',
+      nick_name: 'ZAYNAB',
+      matric: '19/56ED003',
     },
   ],
   SOCIAL_SECRETARY: [
     {
-      name: 'AKANDE PETER OLANREWAJU',
-      nick_name: 'BABYFACE',
-      department: 'STATISTICS',
-      matric: '19/56EG037',
+      name: 'ABDULRAHEEM AZEEZAT',
+      nick_name: 'AZ',
+      matric: '19/56ED002',
     },
   ],
   WELFARE_SECRETARY: [
     {
-      name: 'ELU ODIBE OLAWALE',
-      nick_name: 'ELU',
-      department: 'STATISTICS',
-      matric: '19/56EG062',
+      name: 'ALIU YUNUS',
+      nick_name: 'JABATA',
+      matric: '19/56ED039',
     },
   ],
   SPORT_SECRETARY: [
     {
-      name: 'OMILELEWE OLAIYA PHILLIP',
-      nick_name: 'DEECAPS',
-      department: 'MATHEMATICS',
-      matric: '20/56EB133',
+      name: 'ADEBISI OLALEKAN TESLIM',
+      nick_name: 'MARCELO',
+      matric: '19/56ED010',
     },
     {
-      name: 'OLAYINKA ABDULMALIK AYOMIDE',
-      nick_name: 'ABDUL',
-      department: 'GEOLOGY',
-      matric: '20/56EA057',
+      name: 'LAWAL ABDULHAMID ADEYANJU',
+      nick_name: 'MIDO',
+      matric: '19/56ED084',
     },
   ],
   PRO: [
     {
-      name: 'OKUNLOLA OLAWALE TAOHEED',
-      nick_name: 'WHALESZZ',
-      department: 'GEOPHYSICS',
-      matric: '18/25PE014',
+      name: 'ABRAHAM TOBA',
+      nick_name: 'AB',
+      matric: '20/56ED098',
     },
   ],
   STUDENT_REPRESENTATIVE_COUNCIL__bo__SRC__bc__: [
     {
-      name: 'BAGBASORO FARUQ KEHINDE',
-      nick_name: 'BAGBANSORO',
-      department: 'STATISTICS',
-      matric: '19/56EG055',
+      name: 'RICHARD AYOBAMI',
+      nick_name: '100 LEVEL',
+      matric: '21/56ED072',
     },
     {
-      name: 'YAKUB OLAWALE MOSHOOD',
-      nick_name: 'DISCRETE',
-      department: 'STATISTICS',
-      matric: '20/56EG118',
+      name: 'AYOKU FUAD GBOLAHAN',
+      nick_name: '100 LEVEL',
+      matric: '21/56ED034',
     },
     {
-      name: 'OLUWATAYO TEMILOLUWA HANNAH',
-      nick_name: 'TEMMY',
-      department: 'MATHEMATICS',
-      matric: '19/56EB102',
-    },
-    {
-      name: 'OYEGUN VICTOR DAMILARE',
-      nick_name: 'VICTOR',
-      department: 'PHYSICS',
-      matric: '19/56ED113',
-    },
-    {
-      name: 'ADELEYE ABDUL-QUDDUS ADEYEMI',
-      nick_name: 'SKOOLBOI',
-      department: 'PHYSICS',
-      matric: '20/56ED109',
-    },
-    {
-      name: 'ILESANMI PRECIOUS OLUWASEGUNFUNMI',
-      nick_name: 'SHEGZZ',
-      department: 'GEOLOGY',
-      matric: '19/56EA042',
-    },
-    {
-      name: 'OKE MONISOLA HABEEBAT',
-      nick_name: 'MONAH',
-      department: 'CHEMISTRY',
-      matric: '20/56EE123',
+      name: 'JOSEPH AKANNI AKANBI',
+      nick_name: '300 LEVEL',
+      matric: '19/56ED031',
     },
   ],
 }

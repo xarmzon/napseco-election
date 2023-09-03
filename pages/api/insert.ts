@@ -21,10 +21,14 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
                 return postsData[post as keyof typeof postsData].map((data) => {
                   return {
                     ...data,
+                    matric: data.matric.trim(),
+                    name: data.name.trim(),
+                    nick_name: data.nick_name.trim(),
                     post: post
                       .replaceAll('__bo__', '(')
                       .replaceAll('__bc__', ')')
-                      .replaceAll('_', ' '),
+                      .replaceAll('_', ' ')
+                      .trim(),
                   }
                 })
               })
