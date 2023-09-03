@@ -9,7 +9,7 @@ export interface IResultCard {
 const ResultCard = ({ candidate }: IResultCard) => {
   return (
     <div className="mx-auto flex w-full max-w-md flex-col items-center justify-center space-y-7 overflow-hidden bg-gradient-to-tr from-slate-100 to-primary/10 p-5 text-center shadow-lg">
-      <div className="relative h-full w-full bg-red-500">
+      <div className="relative h-full w-full">
         <div className="absolute top-0 right-0 flex h-52 w-52 items-center justify-center overflow-hidden rounded-full opacity-10">
           <Image
             src={`/images/logo.png`}
