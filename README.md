@@ -10,5 +10,6 @@ The voting site for the Department of Physics, University of Ilorin, Ilorin Kwar
 
 - Framework -> NextJs
 - Language -> TypeScript
+- Styling -> TailwindCSS
 - Database -> MongoDB
 - Deployment -> Netlify
